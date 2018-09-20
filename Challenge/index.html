@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game</title>
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+<style>
+	#ImageContainer
+	{
+		display: none;
+		margin-top: 10px;
+	}
+	#rock
+	{
+		
+		margin-right: 20px;
+	}
+	#paper
+	{
+		
+		margin-right: 20px;
+	}
+	#scissors
+	{
+		
+		margin-right: 20px;
+	}
+	#rock:hover
+	{
+		cursor:pointer;
+	}
+	#paper:hover
+	{
+		cursor:pointer;
+	}
+	#scissors:hover
+	{
+		cursor:pointer;
+	}
+	.image
+	{
+		box-shadow: 3px 6px 31px 3px rgba(0,0,0,0.75);
+
+	}
+.button {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: #0D324D;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 21px;
+  padding: 5px;
+  width: 300px;
+  
+  margin: 5px;
+  box-shadow: -1px 3px 10px 1px rgba(0,0,0,0.75);
+  font-family: 'Kalam', cursive;
+
+
+}
+
+.button:hover
+{
+	cursor: pointer;
+	box-shadow: -1px 3px 18px 1px rgba(0,0,0,0.75);
+
+}
+#header
+{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<h1 id="header">Game Time</h1>
+
+<button onclick="PlayGame()" class="button">Play Rock, Paper & Scissors</button>
+<div id="ImageContainer">
+	<img src="./img/images.png" id="rock" class="image" onclick="Rock()">
+	<img src="./img/paper.png" id="paper" class="image" onclick="Paper()">
+	<img src="./img/scissors.png" id="scissors" class="image" onclick="Scissors()">
+</div>
+
+
+
+<script src="./js/main.js"></script>
+</body>
+</html>
