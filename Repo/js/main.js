@@ -231,3 +231,19 @@ function Include(str, str1)
 		return false;
 }
 console.log(Include("megatron", "z"));
+
+function SliceString(str, num1, num2)
+{
+	var res = "";
+	var reg = "";
+
+	for(var i=num1; i<num2; i++)
+	{
+		res = str.charAt(i);
+		reg += res;
+
+	}
+	console.log(reg);
+	
+}
+SliceString("underground", 1, 7);
