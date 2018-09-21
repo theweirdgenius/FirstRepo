@@ -42,7 +42,7 @@ for(var i=0; i<a; i++)
 		console.log("col");
 	}
 }*/
-var myTable = document.getElementById("nestedTable");
+/*var myTable = document.getElementById("nestedTable");
 for(var i=0; i<10; i++)
 {
 	var row = document.createElement("tr");
@@ -50,15 +50,80 @@ for(var i=0; i<10; i++)
 	for(var j=0; j<10; j++)
 	{
 		var col = document.createElement("td");
-		if(j%2 == 0)
+		if(i%2 == 0)
 		{
-		col.setAttribute("class", "tableData");
+			if(j%2 == 0)
+			{
+			col.setAttribute("class", "tableData");
+			}
+			else
+			{
+			col.setAttribute("class", "tabData");
+			}
 		}
 		else
 		{
-		col.setAttribute("class", "tabData");
+			if(j%2 != 0)
+			{
+				col.setAttribute("class", "tableData");
+			}
+			else
+			{
+				col.setAttribute("class", "tabData");
+			}
 		}
 		row.append(col);
 	}
 
+}*/
+
+
+var numArr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"
+];
+var strArr = ["!", "@", "#", "$", "&"];
+
+
+function PasswordValidator(str)
+{
+	var condMet = 0;
+	if (str.length >= 8)
+	{
+		condMet = 1;
+	}
+
+	for (var i=0; i<numArr.length; i++)
+	{
+		if(str.includes(numArr[i]))
+		{
+			condMet+= 1;
+			break;
+		}
+	}
+
+	for (var i=0; i<strArr.length; i++)
+	{
+		if(str.includes(strArr[i]))
+		{
+			condMet+=1;
+			break;
+		}
+	}
+
+	if(condMet==3)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+
+
 }
+console.log(PasswordValidator("11456789"));
+
+
+
+
+
+
