@@ -196,4 +196,38 @@ function EmailCheck()
 	}
 }
 
+function ReplaceString(str, num, str1)
+{
+	var res = str.slice(0,num) + str1 + str.slice((num+1));
+	console.log(res);
 
+}
+ReplaceString("caterp", 2, "p");
+
+
+function IndexAt(str, str1)
+{
+	for(var i=0; i<str.length; i++)
+	{
+		if(str.charAt(i) == str1)
+		{
+			return i;
+		}
+	}
+
+
+}
+console.log(IndexAt("chemical", "a"));
+
+function Include(str, str1)
+{
+	for(var i=0;i<str.length; i++)
+	{
+		if(str.charAt(i) == str1)
+		{
+			return true;
+		}
+	}
+		return false;
+}
+console.log(Include("megatron", "z"));
