@@ -247,3 +247,59 @@ function SliceString(str, num1, num2)
 	
 }
 SliceString("underground", 1, 7);
+
+
+function ModString(val)
+{
+	if( typeof val != "string")
+	{
+		console.log("Not a string");
+		return;
+	}
+	this.val=val,
+	this.ModSlice = function(start, stop)
+	{
+		var newVal = "";
+		for(var i=start; i<stop; i++)
+		{
+			newVal += this.val[i];
+
+		}
+		this.val = newVal
+	},
+	
+	this.LastIndex = function(char)
+	{
+		for(var i=this.val.length; i>=0; i--)
+		{
+			if(this.val.charAt(i) == char)
+			{
+			console.log(i);
+			break;
+			}
+
+		}
+	},
+
+	this.CountLength = function()
+	{
+		var count = 0;
+		while (this.val[count] != undefined)
+		{
+			count++;
+		}
+		console.log(count);
+	}
+}
+
+var myString = new ModString("This is my string");
+
+console.log(typeof myString.val);
+
+//myString.ModSlice(1,9);
+
+console.log(myString.val);
+
+myString.LastIndex("g");
+
+myString.CountLength();
