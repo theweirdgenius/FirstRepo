@@ -91,7 +91,7 @@ function ColourfulTable()
 	var g= Math.floor(Math.random()*256);
 	var b= Math.floor(Math.random()*256);
 	data[tableIndex].style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-	setTimeout(ColourfulTable, 0);
+	setTimeout(ColourfulTable, -1000);
 
 }
 ColourfulTable();
