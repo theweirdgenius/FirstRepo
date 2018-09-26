@@ -69,12 +69,12 @@ var b= Math.floor(Math.random()*256);
 
 var data=[];
 var myTable = document.getElementById("nestedTable");
-for(var i = 0; i<21; i++)
+for(var i = 0; i<15; i++)
 {
 	var row = document.createElement("tr");
 	myTable.append(row);
 
-	for(j=0; j<21; j++)
+	for(j=0; j<15; j++)
 	{
 		var col = document.createElement("td");
 		data.push(col);
@@ -91,9 +91,102 @@ function ColourfulTable()
 	var g= Math.floor(Math.random()*256);
 	var b= Math.floor(Math.random()*256);
 	data[tableIndex].style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-	setTimeout(ColourfulTable, -1000);
+	setTimeout(ColourfulTable, 0);
 
 }
 ColourfulTable();
 
+
+
+$("#changeBack").click(function(){
+	
+	if ($(".para").css("background-color") == "rgba(0, 0, 0, 0)")
+	{
+		$(".para").css("background-color", "yellow");
+	}
+	else
+	{
+		$(".para").css("background-color", "rgba(0, 0, 0, 0)");
+	}
+
+});
+
+ $("#startB").click(function(){
+        var div = $("#animateDiv");  
+        div.animate({left: '500px'}, 10000);
+});
+
+ $("#stopB").click(function(){
+    $("#animateDiv").stop();
+});
+
+  $("#startA").click(function(){
+        var div = $("#animateDiv1");  
+        div.animate({left: '100vw'}, 5000);
+        div.animate({left:'0'}, 5000);
+});
+
+  $("#changeB").click(function(){
+        var col = $("#colorInput").val();
+        console.log(col);
+        $("body").css("background-color", col);
+        
+});
+
+  $("#displayAlert").click(function(){
+        var aler = $("#alertInput").val();
+        console.log(aler);
+        alert(aler);
+        
+});
+
+  function WordJumbler(str)
+  {
+  	var letter = str;
+
+	var jumbledWord = "";
+
+	for (var i = 0; i < str.length; i++) 
+	{
+    var index = Math.floor(Math.random() * letter.length);
+    jumbledWord = jumbledWord + letter.charAt(index);
+    letter = letter.substr(0, index) + letter.substr(index + 1);
+	}
+
+	return jumbledWord;
+
+
+  }
+
+  console.log(WordJumbler("animal"));
+
+var randomWords=["cat", "dog", "lion", "mouse", "horse", "bat", "deer", "duck", "cow"];
+
+var ranTable = document.getElementById("randomTable");
+var randData = []
+for(var i = 0; i<3; i++)
+{
+	var row = document.createElement("tr");
+	ranTable.append(row);
+
+	for(j=0; j<3; j++)
+	{
+		var col = document.createElement("td");
+		col.setAttribute('class', 'tableData');
+		randData.push(col)
+		row.append(col);
+	}
+}
+/*$(".tableData").text(function(){
+    return randomWords[Math.floor(Math.random()*randomWords.length)];
+});*/
+var ranCount = 0;
+var ind;
+while(randomWords.length >= 1)
+{
+	ind = Math.floor(Math.random()*randomWords.length);
+	randData[ranCount].innerHTML = randomWords[ind];
+	randomWords.splice(ind, 1);
+	ranCount++;
+}
 })
