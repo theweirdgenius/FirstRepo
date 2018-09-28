@@ -1,0 +1,38 @@
+#sideBar
+{
+  display: none;
+  width: 150px !important;
+  height: 100vw !important;
+}
+#l1
+{
+  color: white !important;
+}
+#l1:hover
+{
+  color:red !important;
+}
+#l2
+{
+  color: white !important;
+}
+#l3
+{
+  color: white !important;
+}
+#l4
+{
+  color: white !important;
+}
+#l5
+{
+  color: white !important;
+}
+#l6
+{
+  color: white !important;
+}
+#toggle
+{
+  margin-right: 10px;
+}
