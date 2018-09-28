@@ -3,14 +3,14 @@ console.log("Hello World!");
 $("#toggle").click(function(){
   
   var disp = $("#sideBar").css("display");
-  if(disp == "none")
+  $("#sideBar").fadeToggle(500);
+/*  if(disp == "none")
   {
-      //$("#sideBar").css("display", "block");
-      $("#sideBar").animate({display:'block'});
+      $("#sideBar").css("display", "block");
   }
   else
   {
       $("#sideBar").css("display", "none");
-  }
+  }*/
 
 })
