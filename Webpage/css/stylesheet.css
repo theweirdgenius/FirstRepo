@@ -1,11 +1,16 @@
 #sideBar
 {
   position: fixed;
+  top:70px;
+  left:0px;
   display: none;
   width: 190px !important;
   height: 100vw !important;
-  background-color: #00000090 !important;
+  background-color: #000000 !important;
+  z-index: 2;
+
 }
+
 #l1
 {
   color: white !important;
@@ -64,6 +69,7 @@
   background-image: url("../img/ass.png");
   background-size: cover;
   height: 400px;
+
 }
 
 #p1{
@@ -76,7 +82,7 @@
   font-size: 21px;
 }
 #ff1{
-  margin-top: 30px;
+  margin-top: 90px;
   height:50px;
   width:50px;
 }
@@ -86,7 +92,7 @@
 #ff2{
   margin-top:17px;
   height:400px;
-  width:730px;
+  width:100%;
 }
 #p3{
   font-weight: bold;
@@ -118,7 +124,7 @@
 #ff3{
   margin-top: 20px;
   height: 330px;
-  width: 350px;
+  width: 100%;
 }
 #fcont{
   margin-top:10px;
@@ -127,7 +133,7 @@
 {
   margin-top:20px;
   height: 250px;
-  width:350px;
+  width:100%;
 }
 #cont2{
   height: 250px;
@@ -143,6 +149,17 @@
   left: 200px;
 
 }
+#png2
+{
+  height: 400px;
+  display: block;
+  position: relative;
+  bottom: 70px;
+  left:90px;
+  
+
+}
+
 #p6
 {
 
@@ -154,7 +171,7 @@
 #ff6
 {
     height:300px;
-    width: 538px;
+    width: 100%;
     margin-top: 20px;
 
 
@@ -179,12 +196,11 @@
 .button {
   display: block;
   border-radius: 7px;
-  background-color: #348AA7;
+  background-color: black;
   border: none;
   color: #FFFFFF;
   text-align: center;
   font-size: 21px;
-  font-family: 'Quando', serif;
   margin-top: 10px;
   padding: 10px;
   width: 170px;

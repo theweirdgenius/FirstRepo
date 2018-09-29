@@ -4,13 +4,14 @@ $("#toggle").click(function(){
   
   var disp = $("#sideBar").css("display");
   $("#sideBar").fadeToggle(500);
-/*  if(disp == "none")
+
+ if(disp == "none")
   {
-      $("#sideBar").css("display", "block");
+      $("body").animate({"padding-left" : "190px"})
   }
   else
   {
-      $("#sideBar").css("display", "none");
-  }*/
+      $("body").animate({"padding-left" : "0px"})
+  }
 
 })
