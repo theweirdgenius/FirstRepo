@@ -1,0 +1,103 @@
+
+
+
+
+
+#loginBox
+{
+	background-color: #00000075;
+	display: block;
+	margin: auto;
+	height: 325px;
+	width: 350px;
+	text-align: center;
+	padding: 10px 10px;
+	color: white;
+	box-shadow: -1px 0px 15px 0px rgba(0,0,0,0.75);
+	font-size: 21px;
+}
+
+#username
+{
+	display: block;
+	margin: auto;
+	margin-bottom: 2px;
+	margin-top: 5px;
+	width:200px;
+	height: 20px;
+	border-radius: 4px;
+	background-image: url('../img/un2.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 22px 22px;
+
+}
+
+
+
+
+
+#password
+{
+	display: block;
+	margin: auto;
+	margin-top: 2px;
+	width: 200px;
+	height: 20px;
+	border-radius: 4px;
+	background-image: url('../img/un1.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20px 18px;
+    
+}
+
+#submit
+{
+	display: block;
+	margin:auto;
+	margin-top: 40px;
+	background-color: #00649475;
+	border: 6px;
+	border-radius: 2px;
+	width: 80px;
+	height: 26px;
+	font-size: 21px;
+	color: white;
+
+}
+
+#submit:hover
+{
+	cursor: pointer;
+	background-color: #b3001b75;
+	
+
+}
+
+body
+{
+	background-image: url("../img/p5gO8c6.jpg");
+	font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+h1
+{
+	font-size: 50px;
+	color:#006494;
+	text-shadow: 1px 1px #00000080;
+}
+
+#logo
+{
+	width:900px;
+	height: 200px;
+	display: block;
+	margin: auto;
+}
+
+b{
+	color: #b3001b;
+}
